@@ -21,12 +21,18 @@
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li>
-              <%= link_to root_path do %>
+              <%= link_to root_path, {
+                data: { toggle: 'tooltip', placement: 'bottom' },
+                title: 'Send message'
+              } do %>
                 <%= fa_icon 'envelope-o' %> 
               <% end %>
             </li>
             <li>
-              <%= link_to root_path do %>
+              <%= link_to root_path, {
+                data: { toggle: 'tooltip', placement: 'bottom' },
+                title: 'Sign out'
+              } do %>
                 <%= fa_icon 'sign-out' %> 
               <% end %>
             </li>
